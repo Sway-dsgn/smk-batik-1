@@ -38,6 +38,7 @@ nav {
     background: rgba(10, 31, 10, 0.97);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 nav img {
@@ -1079,4 +1080,73 @@ nav img {
 body:not(:has(.header)) nav {
     position: relative;
     background: rgba(10, 31, 10, 0.97);
+}
+
+/* ===== HAMBURGER ===== */
+.hamburger {
+    display: none;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 31, 10, 0.97);
+        padding: 20px 6%;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid #1e3a1e;
+    }
+
+    .nav-links ul li:last-child {
+        border-bottom: none;
+    }
+}
+
+/* ===== SCROLL TO TOP ===== */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 45px;
+    height: 45px;
+    background: #03751e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(3,117,30,0.4);
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: #025a17;
+    transform: translateY(-3px);
 }

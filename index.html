@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMK Batik 1 Surakarta</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="SMK BATIK 1 SURAKARTA.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="SMK BATIK 1 SURAKARTA.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <section class="header">
         <nav>
             <a href="index.html"><img src="SMK BATIK 1 SURAKARTA.png" alt="Logo"></a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+            </div>
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
                     <li><a href="services.html">Program Studi</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
                 </ul>
             </div>
         </nav>
@@ -29,8 +32,8 @@
             <h1>SMK BATIK 1 SURAKARTA</h1>
             <p>Welcome to our school!</p>
             <div class="hero-btn">
-                <a href="" class="btn primary">Daftar PPDB</a>
-                <a href="" class="btn secondary">Program Studi</a>
+                <a href="contact.html" class="btn primary">Daftar PPDB</a>
+                <a href="services.html" class="btn secondary">Program Studi</a>
             </div>
         </div>
     </section>
@@ -209,68 +212,29 @@
         </div>
     </section>
 
-    <!-- SECTION MITRA -->
-<section class="mitra">
-    <div class="mitra-header">
-        <span class="section-tag">Kerjasama</span>
-        <h2>Mitra & Kerjasama</h2>
-        <p>Perusahaan dan instansi yang bermitra dengan SMK Batik 1 Surakarta</p>
-    </div>
-    <div class="mitra-track-wrapper">
-        <div class="mitra-track">
-            <!-- Logo mitra asli -->
-            <div class="mitra-card">
-                <i class="fa-solid fa-hospital"></i>
-                <p>RS Kasih Ibu</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-pills"></i>
-                <p>Kimia Farma</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-building"></i>
-                <p>Bank Jateng</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-laptop-code"></i>
-                <p>Telkom Indonesia</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-store"></i>
-                <p>Indomaret</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-industry"></i>
-                <p>Batik Keris</p>
-            </div>
-            <!-- Duplikat biar infinite -->
-            <div class="mitra-card">
-                <i class="fa-solid fa-hospital"></i>
-                <p>RS Kasih Ibu</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-pills"></i>
-                <p>Kimia Farma</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-building"></i>
-                <p>Bank Jateng</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-laptop-code"></i>
-                <p>Telkom Indonesia</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-store"></i>
-                <p>Indomaret</p>
-            </div>
-            <div class="mitra-card">
-                <i class="fa-solid fa-industry"></i>
-                <p>Batik Keris</p>
+    <section class="mitra">
+        <div class="mitra-header">
+            <span class="section-tag">Kerjasama</span>
+            <h2>Mitra & Kerjasama</h2>
+            <p>Perusahaan dan instansi yang bermitra dengan SMK Batik 1 Surakarta</p>
+        </div>
+        <div class="mitra-track-wrapper">
+            <div class="mitra-track">
+                <div class="mitra-card"><i class="fa-solid fa-hospital"></i><p>RS Kasih Ibu</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-pills"></i><p>Kimia Farma</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-building"></i><p>Bank Jateng</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-laptop-code"></i><p>Telkom Indonesia</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-store"></i><p>Indomaret</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-industry"></i><p>Batik Keris</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-hospital"></i><p>RS Kasih Ibu</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-pills"></i><p>Kimia Farma</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-building"></i><p>Bank Jateng</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-laptop-code"></i><p>Telkom Indonesia</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-store"></i><p>Indomaret</p></div>
+                <div class="mitra-card"><i class="fa-solid fa-industry"></i><p>Batik Keris</p></div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer class="footer">
         <div class="footer-container">
@@ -318,6 +282,10 @@
         </div>
     </footer>
 
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -327,9 +295,35 @@
             });
         }, { threshold: 0.1 });
 
-        document.querySelectorAll('.course, .about, .berita, .testimoni').forEach(el => {
+        document.querySelectorAll('section').forEach(el => {
             observer.observe(el);
         });
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const icon = document.getElementById('hamburger-icon');
+            navLinks.classList.toggle('active');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        const scrollBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 
 </body>
