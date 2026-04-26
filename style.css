@@ -782,3 +782,301 @@ nav img {
     text-align: center;
     margin: 0;
 }
+
+/* ===== PAGE HERO ===== */
+.page-hero {
+    background: linear-gradient(rgba(4,9,30,0.85), rgba(4,9,30,0.85)), url('20327974-9.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 6% 60px 6%;
+    text-align: center;
+}
+
+.page-hero h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.page-hero p {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* ===== ABOUT PAGE ===== */
+.about-page {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.about-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.visi-misi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.visi, .misi {
+    background: #f9f9f9;
+    padding: 35px;
+    border-radius: 12px;
+    border-top: 3px solid #03751e;
+}
+
+.visi i, .misi i {
+    font-size: 30px;
+    color: #03751e;
+    margin-bottom: 15px;
+}
+
+.visi h3, .misi h3 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.visi p, .misi p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.misi ul {
+    list-style: none;
+    padding: 0;
+}
+
+.misi ul li {
+    color: #555;
+    font-size: 14px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.misi ul li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #03751e;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ===== SERVICES PAGE ===== */
+.services-page {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    border-color: #03751e;
+    box-shadow: 0 4px 20px rgba(3,117,30,0.1);
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    background: #f0faf3;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #03751e;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.service-card:hover .service-icon {
+    background: #03751e;
+    color: white;
+}
+
+.service-card h3 {
+    color: #111;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-card > p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+}
+
+.service-list li {
+    color: #555;
+    font-size: 12px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-list li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #03751e;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-page {
+    width: 90%;
+    margin: 80px auto;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    width: 40px;
+    height: 40px;
+    background: #f0faf3;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #03751e;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.contact-item h4 {
+    color: #111;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.contact-item p {
+    color: #666;
+    font-size: 13px;
+    text-align: left;
+    margin: 0;
+}
+
+.sosmed-contact {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.sosmed-contact a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sosmed-contact a:hover {
+    background: #03751e;
+    border-color: #03751e;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #111;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #03751e;
+    box-shadow: 0 0 0 3px rgba(3,117,30,0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Navbar di halaman selain index */
+body:not(:has(.header)) nav {
+    position: relative;
+    background: rgba(10, 31, 10, 0.97);
+}
